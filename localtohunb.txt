@@ -1,0 +1,41 @@
+$ git branch
+* main
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/main/project/project (main)
+$ git checkout -b testbranch
+Switched to a new branch 'testbranch'
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/main/project/project (testbranch)
+$ git add .
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/main/project/project (testbranch)
+$ git commit -m "from new branch"
+[testbranch 24100ea] from new branch
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/main/project/project (testbranch)
+$ git push
+fatal: The current branch testbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin testbranch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/main/project/project (testbranch)
+$ git push --set-upstream origin testbranch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 152.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sureshbs1313/project.git
+   ac954d2..24100ea  testbranch -> testbranch
+branch 'testbranch' set up to track 'origin/testbranch'.
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/main/project/project (testbranch)
+$
