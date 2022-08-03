@@ -1,1 +1,5 @@
 my second pull file
+current working dircetory pwd
+ls
+git pull
+it is used to pull the files added in the repohub to local repo
