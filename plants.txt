@@ -4,3 +4,5 @@ git commit -m
 git push origin master
 git clone
 git stash
+
+git is local repo and git hub is rephub
